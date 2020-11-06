@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasMainOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasMainOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOrigin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOrigin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isTheEnergyof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isTheEnergyof">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#CO2Emission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#CO2Emission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Plane"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Coal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Coal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Particulates"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Gas"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Cooker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Cooker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ElectricCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ElectricCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ThermalCar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fusion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#CO2Emission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Gas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Germany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Germany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Heater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Heater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Hydraulic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Hydraulic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Microwave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Microwave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixFrance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixFrance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasMainOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixGermany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixGermany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasMainOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Coal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Gas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixUSA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#MixUSA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasMainOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Gas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Coal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#hasOtherOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearSubmarine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearSubmarine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Uranium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Particulates"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Particulates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Particulates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#RadioactiveWaste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#RadioactiveWaste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Polution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyResources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Smartphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Smartphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Domestic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Solar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Solar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Energy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#canBeConvertedInto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ThermalCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ThermalCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ThermalSubmarine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#ThermalSubmarine">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Submarine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#needToStore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Oil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Thermal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#useEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#EnergyConsumingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#USA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#USA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Uranium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Uranium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#NuclearResources"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#whileUsingGenerates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#RadioactiveWaste"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#isUsedToCreate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Cooker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Heater"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Microwave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Smartphone"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Fossil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Nuclear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Renewable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Hydraulic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Solar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/clement/ontologies/2020/10/untitled-ontology-12#Wind"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
